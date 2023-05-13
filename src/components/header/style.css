@@ -1,0 +1,15 @@
+.cabecalho{
+ 
+    font-family: 'Roboto';
+    border-bottom: 2px solid rgb(216, 215, 215);
+    margin-top: 3em;
+
+}
+
+.texto__header{
+
+    color:var(--cinza-escuro);
+    margin: .3em;
+    font-size: 1.6em;
+    font-weight: 500;
+}
