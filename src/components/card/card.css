@@ -1,0 +1,74 @@
+main{
+    margin-top: 1.8em ;
+}
+
+.lista__itens{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.itens{
+    margin: 1em 0;
+}
+
+
+
+.descricao h5{
+
+    font-size: 12px;
+
+}
+.active{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.decremento__incremento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.decremento__incremento button{
+    border-radius: 50px;
+    border: none;
+    padding: 2px 4px;
+    margin: 12px 6px 0 6px;
+   
+}
+
+.decremento__incremento input{
+    width: 110px;
+    text-align: center;
+    padding: 7px 0;
+    margin: 12px 7px 0 7px;
+   
+
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+     margin: 0;
+}
+
+.container__adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0 10px 0 ;
+}
+
+.button__adicionar{
+    background-color: rgb(0, 132, 255);
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: .7em .3em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
