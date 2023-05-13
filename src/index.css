@@ -1,0 +1,10 @@
+:root
+{
+   --cinza-escuro:  rgb(99, 102, 126);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   
+}
