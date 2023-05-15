@@ -6,8 +6,7 @@ function Header() {
     <header className='cabecalho'>
         
        <h1 className='texto__header'>Produtos</h1> 
-
-    
+       
     </header>
   )
 }
