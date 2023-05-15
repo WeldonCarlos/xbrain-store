@@ -6,6 +6,7 @@ main{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+   justify-items: center;
 }
 
 .itens{
@@ -113,6 +114,3 @@ input[type="number"]::-webkit-inner-spin-button {
     font-family: 'Roboto';
 }
 
-#conteiner-card{
-
-}

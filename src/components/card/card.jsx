@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
@@ -8,6 +7,7 @@ import {TextField}  from '@mui/material';
 import Typography from '@mui/material/Typography';
 import addIco from '../../assets/botoes/add.svg'
 import removeIco from '../../assets/botoes/remove.svg'
+import CardActions from '@mui/material/CardActions';
 import './card.css'
 import data from '../../data/data';
 
