@@ -8,7 +8,7 @@ function BtnLaranja(props) {
     <div>
 
       <Button type='submit' id='button-finalizar' variant="contained" >
-        <Link to={props.rota}>{props.titulo}</Link>
+        <Link style={{fontSize:props.fonte}} to={props.rota}>{props.titulo}</Link>
       </Button>
     </div>
   )
