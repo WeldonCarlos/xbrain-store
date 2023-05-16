@@ -44,7 +44,7 @@ function Formulario() {
                         label="Email"
                         required
                         placeholder='Digite seu email aqui'
-                        defaultValue="foo"
+                        
                     />
 
                     <FormControl>
