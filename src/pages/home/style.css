@@ -1,7 +1,19 @@
 .container__master{
     display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+    height: 100vh;
+}
+
+
+
+/*
+.container__master{
+    display: flex;
     margin: 0 8em;
     height: 100vh;
     flex-direction: column;
   
 }
+
+*/
