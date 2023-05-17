@@ -8,7 +8,9 @@ export default function adicionar(state = [], action) {
     switch (action.type) {
       case "ADD_CARRINHO":
         return [calc];
-  
+       
+      case "LIMPAR": 
+        return action.preco = 0;
       default:
         return state;
     }
