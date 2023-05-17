@@ -1,8 +1,13 @@
 import React from 'react'
-import Header from '../../components/header/Header';
-import Cartao from '../../components/card/card';
 import './style.css'
+
+
+import Cartao from '../../components/card/card';
 import Formulario from '../../components/formulario/Formulario';
+import Header from '../../components/header/Header';
+
+
+
 
 function Home() {
   return (
