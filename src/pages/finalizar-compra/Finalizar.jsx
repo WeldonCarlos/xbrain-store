@@ -21,7 +21,7 @@ function Finalizar() {
   const dispatch = useDispatch();
  
   const iniciarNovaCompra = () => {
-    alert("botao funcionando")
+    
     dispatch({
       type:"LIMPAR",
       preco 
