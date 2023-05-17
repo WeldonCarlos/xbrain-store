@@ -25,7 +25,7 @@ npm install
 Após concluir a configuração do projeto, você pode iniciar a aplicação localmente. Utilize o seguinte comando:
 
 
-Copy code
+
 npm run dev
 Este comando inicia a aplicação no modo de desenvolvimento. Abra seu navegador e acesse http://localhost:3000 para visualizar a página de produtos.
 
@@ -45,3 +45,4 @@ Redux: biblioteca de gerenciamento de estado para JavaScript.
 React Router Dom: biblioteca de roteamento para aplicativos React.
 Material-UI: biblioteca de componentes de interface de usuário para React.
 
+##Link do Deploy: https://xbrain-store.netlify.app/ 
