@@ -1,121 +1,72 @@
 .conteiner-geral {
-   
+
+    align-items: center;
+    background-color: rgb(230, 235, 240);
     display: flex;
+    height: 100vh;
     justify-content: center;
-    margin-top: 6em;
-   
-   
 
 }
 
 #container-card-finalizar {
-    width: 240px;
+
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1em 2em;
     gap: 20px;
-    
+    height: 360px;
+    justify-content: center;
+    padding: 1em 2em;
+    position: relative;
+    text-align: center;
+    width: 240px;
    
 }
 
-#nome-card-finalizar{
+
+#nome-card-finalizar {
+
+    color: rgb(61, 73, 82);
+    font-family: 'Roboto';
     font-size: 1.5em;
-    margin: .4em 0 .2em  0;
-    font-family: 'Roboto';
     font-weight: 600;
-    color: rgb(61, 73, 82);
+    margin: .4em 0 .2em 0;
     text-align: center;
+
 }
 
-#descricao-card-finalizar{
+#descricao-card-finalizar {
+
+    color: rgb(61, 73, 82);
+    font-family: 'Roboto';
     font-size: .9em;
-    margin: .4em 0 .2em  0;
-    font-family: 'Roboto';
     font-weight: 600;
-    color: rgb(61, 73, 82);
+    margin: .4em 0 .2em 0;
     text-align: center;
+
 }
 
-#descricao-card-finalizar{
+#descricao-card-finalizar {
+
+    color: rgb(61, 73, 82);
     font-size: .9em;
-    margin: .4em 0 .2em  0;
     font-family: 'Roboto';
     font-weight: 600;
-    color: rgb(61, 73, 82);
+    margin: .4em 0 .2em 0;
     text-align: center;
 }
 
-.valor__finalizar{
+.valor__finalizar {
     color: rgb(56, 121, 241);
     font-weight: bold;
 }
-.like{
+
+.like {
     width: 140px;
     margin-top: 1em;
 
-      
 }
 
 
 
 
-
-
-/*
-
-
-#container-card-finalizar {
-    max-width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2em 2em;
-}
-
-.conteiner-geral {
-    display: flex;
-    justify-content: center;
-    margin-top: 7em;
-
-}
-
-#nome-card-finalizar{
-    font-size: 1.5em;
-    margin: .4em 0 .2em  0;
-    font-family: 'Roboto';
-    font-weight: 600;
-    color: rgb(61, 73, 82);
-    text-align: center;
-}
-
-#descricao-card-finalizar{
-    font-size: .9em;
-    margin: .4em 0 .2em  0;
-    font-family: 'Roboto';
-    font-weight: 600;
-    color: rgb(61, 73, 82);
-    text-align: center;
-}
-
-.valor__finalizar{
-    color: rgb(56, 121, 241);
-    font-weight: bold;
-}
-
-
-.container-img-like{
-    display: flex;
-    margin:2em;
-    
-}
-.like{
-    width: 140px;
-      
-}
-
-*/
