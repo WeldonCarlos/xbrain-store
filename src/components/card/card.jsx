@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
+import './card.css'
+import './responsive.css'
+
+import addIco from '../../assets/botoes/add.svg'
+import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import { TextField } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import addIco from '../../assets/botoes/add.svg'
-import removeIco from '../../assets/botoes/remove.svg'
-import './card.css'
-import data from '../../data/data';
 
+import removeIco from '../../assets/botoes/remove.svg'
+
+import data from '../../data/data';
+import { useDispatch } from 'react-redux';
 
 
 
@@ -18,6 +22,8 @@ function Cartao() {
   const [ativar, setAtivar] = useState(null)
   const [incremento, setIncremento] = useState(1)
 
+  //Disparo de dados para o reducer
+  const dispatch = useDispatch()
 
   //Função de ativar o modal por o id 
   function modalAdicionar(id) {
@@ -39,8 +45,16 @@ function Cartao() {
   }
 
   //Função para fazer o dispatch para o redux
-  function adicionarProduto() {
-    alert(incremento)
+  function adicionarProduto(preco) {
+    if (incremento == 0) {
+      alert('Selecione a Quantidade');
+    }
+
+    dispatch({
+      type: "ADD_CARRINHO",
+      preco,
+      incremento
+    })
   }
 
 
@@ -69,7 +83,7 @@ function Cartao() {
                         {item.nome}
                       </Typography>
                       <Typography id="preco" variant="body2" color="text.secondary">
-                        R$ {item.preco}
+                        R$ {item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}
 
                       </Typography>
                       <Typography id="descricao" variant="body2" color="text.secondary">
@@ -85,29 +99,31 @@ function Cartao() {
 
                     <div className='decremento__incremento'>
                       <button onClick={() => { decremento() }}><img src={removeIco} alt="icone de sinal de menos" /></button>
-                      <TextField sx={{ height: 50 }} type="Number" id='inputAdicionar' value={incremento} onChangeText={(text) => { setIncremento(text) }} />
+                      <TextField sx={{ height: 42 }} type="Number" id='inputAdicionar' value={incremento} onChange={(text) => { setIncremento(text) }} />
                       <button onClick={() => { addIncremento() }}> <img src={addIco} alt="icone de sinal de mais" /></button>
                     </div>
 
                     <div className='container__adicionar'>
-                      <Button id='button-adicionar' onClick={() => { adicionarProduto() }} variant="contained" >
+                      <Button id='button-adicionar' onClick={() => { adicionarProduto(item.preco) }} variant="contained" >
                         Adicionar
                       </Button>
                     </div>
                   </div>) : (
-                  <CardContent id="conteiner-card" >
-                    <Typography sx={{ fontSize: ".8em", height: 28 }} gutterBottom variant="h5" component="div">
+
+                  // Dados estaticos do card 
+                  <CardContent id="conteiner-card-statico" >
+                    <Typography id='name-estatico' variant="h5" component="div">
                       {item.nome}
                     </Typography>
-                    <Typography id="preco" variant="body2" color="text.secondary">
-                      R$ {item.preco}
+                    <Typography id="preco-estatico" variant="body2" color="text.secondary">
+                      R$ {item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}
 
                     </Typography>
                     <Typography id="descri" variant="body2" color="text.secondary">
                       {item.descricao}
 
                     </Typography>
-                    <Typography  id="descon" variant="body2" color="text.secondary">
+                    <Typography id="descon" variant="body2" color="text.secondary">
                       {item.desconto}
 
                     </Typography>
