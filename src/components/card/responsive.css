@@ -1,0 +1,380 @@
+@media (min-width: 720px) {
+
+
+    .lista__itens {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        list-style: none;
+
+    }
+
+    #cartoes {
+
+        height: 320px;
+        max-width: 220px;
+
+
+    }
+
+    #container-img-cartao {
+        width: 215px;
+
+    }
+
+    #imagem-cartao {
+        width: 150px;
+    }
+
+
+    /* O .active refere-se a mini lógica de css
+    para ativar o modal quando o card é clicado*/
+    .active {
+
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -6em;
+        opacity: 0.8;
+
+    }
+    /*************************************************************************/
+
+
+    #titulo {
+        font-size: 0.8em;
+        font-weight: 500;
+        height: 28px;
+
+    }
+
+    #preco {
+
+        color: rgb(61, 73, 82);
+        font-size: 1.3em;
+        font-weight: bold;
+        margin: .4em 0 .2em 0;
+
+    }
+
+
+    #descricao {
+        font-size: 0.7em;
+
+    }
+
+    #desconto {
+        font-size: 0.7em;
+        margin-bottom: -18px;
+    }
+
+
+    .decremento__incremento {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+
+    }
+
+    .decremento__incremento button {
+        border-radius: 50px;
+        border: none;
+        margin: -8px 10px 0 10px;
+        padding: 2px 4px;
+
+
+    }
+
+    .decremento__incremento button img {
+
+        margin-top: 0.1em;
+
+    }
+
+    .decremento__incremento button:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: rgb(138, 159, 170);
+        cursor: pointer;
+
+
+    }
+
+    #inputAdicionar {
+        padding: 0.5em;
+        text-align: center;
+
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .container__adicionar {
+
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin: 15px 12;
+    }
+
+
+    #button-adicionar {
+
+        color: #fff;
+        background-color: rgb(0, 132, 255);
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        margin: .6em 0 0 0px;
+        padding: 5px 5px;
+        width: 100%;
+
+    }
+
+
+
+}
+
+@media (min-width: 1024px) {
+    .lista__itens {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        list-style: none;
+
+    }
+
+    #cartoes {
+
+        height: 360px;
+        max-width: 305px;
+
+
+    }
+
+    .active {
+
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -6em;
+        opacity: 0.8;
+
+    }
+
+    #container-img-cartao {
+        width: 300px;
+
+    }
+
+    #imagem-cartao {
+        width: 200px;
+    }
+
+
+}
+
+@media (min-width: 1140px) {
+    .lista__itens {
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 0.8fr);
+        justify-items: center;
+        list-style: none;
+
+    }
+
+    #cartoes {
+
+        height: 311px;
+        max-width: 305px;
+
+
+    }
+
+    #container-img-cartao {
+        width: 240px;
+
+    }
+
+    #imagem-cartao {
+        width: 150px;
+    }
+
+    .active {
+
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -6em;
+        opacity: 0.8;
+
+    }
+
+    #button-adicionar {
+
+        color: #fff;
+        background-color: rgb(0, 132, 255);
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        font-family: 'Roboto';
+        margin: .8em 0 0 0px;
+        padding: 5px 5px;
+        width: 100%;
+
+    }
+
+
+}
+
+@media (min-width: 1333px) {
+
+    .lista__itens {
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 0.8fr);
+        justify-items: center;
+        list-style: none;
+
+    }
+
+    #cartoes {
+
+        height: 380px;
+        max-width: 320px;
+
+
+
+    }
+
+    .active {
+
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -6em;
+        opacity: 0.8;
+
+    }
+
+    #container-img-cartao {
+        width: 300px;
+
+    }
+
+    #imagem-cartao {
+        width: 220px;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+
+
+    /* Esse começo refere-se ao dados staticos do cartão */
+    #name-estatico {
+        font-size: 1em;
+        font-weight: 500;
+        height: 28px;
+
+    }
+
+    #preco-estatico {
+        color: rgb(61, 73, 82);
+        font-size: 2em;
+        font-weight: bold;
+        margin: .4em 0 .2em 0;
+
+    }
+
+    #descri {
+        font-size: 1em;
+
+    }
+
+    #descon {
+        font-size: 1em;
+        margin-bottom: -18px;
+    }
+
+    /*********************************************************************/
+
+
+
+    /* Essa parte refere-se aos dados no modal que sobe quando o card é clicado */
+    #titulo {
+        font-size: 1em;
+        font-weight: 500;
+        height: 28px;
+
+    }
+
+    #preco {
+
+        color: rgb(61, 73, 82);
+        font-size: 2em;
+        font-weight: bold;
+        margin: .4em 0 .2em 0;
+
+    }
+
+
+    #descricao {
+        font-size: 1em;
+
+    }
+
+    #desconto {
+        font-size: 1em;
+        margin-bottom: -18px;
+    }
+
+    /*********************************************************************/
+
+    #cartoes {
+
+        height: 480px;
+        max-width: 320px;
+
+
+    }
+
+    /* O .active refere-se a mini lógica de css
+    para ativar o modal quando o card é clicado*/
+
+    .active {
+
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        margin-top: -5.5em;
+        opacity: 0.8;
+        gap: 10px;
+
+    }
+
+    /*********************************************************************/
+    #container-img-cartao {
+        width: 320px;
+
+    }
+
+    #imagem-cartao {
+        width: 250px;
+    }
+
+
+
+
+}
