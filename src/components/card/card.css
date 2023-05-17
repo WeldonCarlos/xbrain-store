@@ -1,290 +1,174 @@
-
-main{
+main {
     display: flex;
     justify-content: center;
-    margin-top: 1.8em ;
+    margin-top: 1.8em;
 }
 
-.lista__itens{
-    list-style: none;
+/*.lista refere-se ao grid criado para organizar os cartões*/
+.lista__itens {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
     justify-items: center;
+    grid-template-columns: repeat(1, 0.3fr);
     gap: 20px;
+    list-style: none;
 }
 
-#cartoes{
-     max-width: 300px;
-    
+/*#cartoes refere-se ao tamanho que determinei para o card tanto de heigt quanto de Whidth*/
+#cartoes {
+
+    height: 305px;
+    max-width: 300px;
+
 }
 
-#container-img-cartao{
-    display: flex;
-    justify-content: center;
-    margin-top: 1em;
+
+/*#container-img-cartao  refere-se ao tamanho da caixa a onde está encapsulado a img dos produtos*/
+#container-img-cartao {
+    width: 240px;
 }
 
-#imagem-cartao{
-   width: 100%;
-   
+/*#imagem-cartao  aponta para o tamanho da img dos produtos*/
+#imagem-cartao {
+    width: 150px;
+    margin: 1em 0 0 2.5em;
+
 }
 
-#titulo{
+
+/* Esse começo refere-se ao dados staticos do cartão */
+#name-estatico {
     font-size: 0.8em;
     font-weight: 400;
-    height:28px;
+    height: 28px;
+
 
 }
-
-#preco{
-    font-size: 1.3em;
-    margin: .4em 0 .2em  0;
-    font-weight: bold;
-    color: rgb(61, 73, 82);
-}
-
-#descri{
+#descri {
     font-size: .7em;
-    
+
 }
 
-.active{
-    display: flex;
-    flex-direction: column;
-    margin-top: -12em;
-    background-color: #fff;
-    opacity: 0.8;
-  
-}
-
-#descon{
-    font-size: .7em; 
-}
-
-.decremento__incremento{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-   
-}
-
-.decremento__incremento button{
-    border-radius: 50px;
-    border: none;
-    padding: 2px 4px;
-    margin: -12px 10px 0 10px;
-    background-color: rgb(176, 182, 185);
-   
-}
-
-.decremento__incremento button img{
-   
-    margin-top: 0.1em;
-   
-}
-
-#inputAdicionar{
-    padding: .6em;
-    text-align: center;
-    
-    
-    
+#descon {
+    font-size: .7em;
 }
 
 
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-     margin: 0;
-}
+#preco-estatico {
 
-.container__adicionar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:  0 10px  ;
-}
-
-#button-adicionar{
-    background-color: rgb(0, 132, 255);
-    color: #fff;
-    border: none;
-    width:100%;
-    padding: 5px 5px;
-    margin:  10px;
-    border-radius: 4px;
-    font-weight: bold;
-    font-family: 'Roboto';
-}
-
-
-
-/* Responsividade */
-
-@media (min-width: 720px){
-
-
-    .lista__itens{
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        justify-items: center;
-        gap: 20px;
-    }
-
-    #cartoes{
-        max-width: 350px;
-        height: 80%;
-   }
-
-   .active{
-    display: flex;
-    flex-direction: column;
-    margin-top: -9em;
-    background-color: #fff;
-    opacity: 0.8;
-  
-}
-
-#titulo{
-    font-size: 0.8em;
-    font-weight: 500;
-    height:28px;
-
-}
-
-#descricao{
-    font-size: 0.7em;
-    
-}
-
-#desconto{
-    font-size: 0.7em;
-    margin-bottom: -18px;
-}
-
-
-    
-   
-}
-
-
-/*
-main{
-    margin-top: 1.8em ;
-}
-
-.lista__itens{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-   justify-items: center;
-}
-
-.itens{
-    margin: 1em 0;
-}
-
-
-
-.descricao h5{
-
-    font-size: 12px;
-
-}
-.active{
-    display: flex;
-    flex-direction: column;
-    margin-top: -7em;
-    background-color: #fff;
-    opacity: 0.8;
-  
-}
-
-#titulo{
-    font-size: 0.8em;
-    font-weight: 500;
-    height:28px;
-
-}
-
-#preco{
+    color: rgb(61, 73, 82);
     font-size: 1.3em;
-    margin: .4em 0 .2em  0;
     font-weight: bold;
+    margin: .2em 0 .2em 0;
+
+
+}
+
+/*************************************************************************************/
+
+
+/* Essa parte refere-se aos dados no modal que sobe quando o card é clicado */
+#titulo {
+    font-size: 0.8em;
+    font-weight: 400;
+    height: 28px;
+
+}
+
+#preco {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: .4em 0 .2em 0;
     color: rgb(61, 73, 82);
 }
 
+#descricao {
+    font-size: .7em;
 
-#descricao{
-    font-size: 0.7em;
-    
 }
 
-#desconto{
-    font-size: 0.7em;
-    margin-bottom: -18px;
+#desconto {
+    font-size: .7em;
 }
 
+/* O .active refere-se a mini lógica de css
+para ativar o modal quando o card é clicado */
+.active {
 
-.decremento__incremento{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: -6.3em;
+    opacity: 0.8;
+
+}
+
+/******************************************************************************/
+
+/* .decremento__incremento aponta para a caixa pai a onde estão os
+elementos de incremeto e decremento*/
+.decremento__incremento {
+
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+
 }
-.decremento__incremento button{
+
+.decremento__incremento button {
+
+    background-color: rgb(176, 182, 185);
     border-radius: 50px;
     border: none;
+    margin: -10px 10px 0 10px;
     padding: 2px 4px;
-    margin: -8px 10px 0 10px;
-   
+
+
+
 }
 
-.decremento__incremento button img{
-   
+.decremento__incremento button img {
+
     margin-top: 0.1em;
-   
+
 }
 
-.decremento__incremento button:hover{
-    transition: all 0.5s ease-in-out;
-    background-color: rgb(138, 159, 170);
-    cursor: pointer;
+/* #inputAdicionar  refere-se ao input que foi importado da biblioteca Material Ui */
+#inputAdicionar {
 
-   
-}
-#inputAdicionar{
-    padding: 0.5em;
+    padding: .4em;
     text-align: center;
-    
 }
 
+
+/*Código para retirar do input do type number as setas que ele tem por padrão*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-     margin: 0;
+    margin: 0;
 }
 
-.container__adicionar{
+
+.container__adicionar {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 12px 0 10px 0 ;
+    margin: 0 10px;
 }
 
 
-#button-adicionar{
-    background-color: rgb(0, 132, 255);
-    color: #fff;
-    border: none;
-    width:100%;
-    padding: 5px 5px;
-    margin: 0 10px;
+#button-adicionar {
+    background-color: rgb(32, 147, 255);
     border-radius: 4px;
+    border: none;
+    color: #fff;
     font-weight: bold;
     font-family: 'Roboto';
+    margin: 10px;
+    padding: 5px 5px;
+    width: 100%;
+
 }
-*/
+
+
+
