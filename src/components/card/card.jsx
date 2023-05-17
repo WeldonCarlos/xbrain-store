@@ -83,7 +83,7 @@ function Cartao() {
                         {item.nome}
                       </Typography>
                       <Typography id="preco" variant="body2" color="text.secondary">
-                        R$ {item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}
+                        R${`${item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}.00`}
 
                       </Typography>
                       <Typography id="descricao" variant="body2" color="text.secondary">
@@ -116,7 +116,7 @@ function Cartao() {
                       {item.nome}
                     </Typography>
                     <Typography id="preco-estatico" variant="body2" color="text.secondary">
-                      R$ {item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}
+                    R${`${item.preco.toLocaleString({ style: 'currency', currency: 'BRL' })}.00`}
 
                     </Typography>
                     <Typography id="descri" variant="body2" color="text.secondary">
