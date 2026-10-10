@@ -1,46 +1,56 @@
-# Projeto de Teste: Página de Produtos com ReactJS + Redux
-Este é um repositório do GitHub que contém o código-fonte e os arquivos necessários para uma aplicação de teste, desenvolvida com as tecnologias JavaScript, ReactJS, Vite, Redux, React Router Dom e Material-UI. O projeto consiste em uma página de produtos onde os usuários podem adicionar produtos ao carrinho e fornecer informações pessoais para finalizar a compra.
+# XBrain Store
 
-##Pré-requisitos
-Antes de executar a aplicação, você precisa ter as seguintes ferramentas instaladas em seu ambiente de desenvolvimento:
+Demonstração de loja em React, com seleção de produtos, carrinho controlado por Redux e fluxo de finalização de compra.
 
-Node.js (versão 12 ou superior)
-npm (gerenciador de pacotes do Node.js)
+**Demonstração:** [XBrain Store](https://xbrain-store.netlify.app/)
 
-##Configuração do Projeto
-Clone este repositório em seu ambiente de desenvolvimento local:
+## O que o projeto apresenta
 
+- Exibição de produtos com preços.
+- Adição e remoção de itens no carrinho.
+- Formulário com dados do comprador.
+- Tela de confirmação e reinício da compra.
 
-git clone (https://github.com/WeldonCarlos/xbrain-store.git)
-Acesse o diretório do projeto:
+## Tecnologias
 
+React · JavaScript · Vite · Redux · React Router · Material UI
 
-cd nome-do-repositorio
-Instale as dependências do projeto:
-shell
+## Executar localmente
 
+```bash
+git clone https://github.com/WeldonCarlos/xbrain-store.git
+cd xbrain-store
 npm install
-
-##Executando a Aplicação
-Após concluir a configuração do projeto, você pode iniciar a aplicação localmente. Utilize o seguinte comando:
-
-
-Copy code
 npm run dev
-Este comando inicia a aplicação no modo de desenvolvimento. Abra seu navegador e acesse http://localhost:3000 para visualizar a página de produtos.
+```
 
-##Funcionalidades
-A aplicação possui as seguintes funcionalidades:
+Abra o endereço informado no terminal.
 
-Visualização de produtos: exibe uma lista de produtos com seus nomes e preços.
-Adição de produtos ao carrinho: permite que o usuário adicione produtos ao carrinho de compras.
-Finalização da compra: coleta informações do comprador, como nome, e-mail e gênero. Após fornecer os dados, o usuário é redirecionado para uma tela de compra finalizada.
-Reiniciar compra: na tela de compra finalizada, há um botão que permite ao usuário iniciar uma nova compra, limpando o carrinho e retornando à página inicial.
+## Comandos disponíveis
 
-##Tecnologias Utilizadas
-JavaScript: linguagem de programação utilizada para o desenvolvimento da aplicação.
-ReactJS: biblioteca JavaScript para a construção de interfaces de usuário.
-Vite: build tool rápida e moderna para projetos JavaScript.
-Redux: biblioteca de gerenciamento de estado para JavaScript.
-React Router Dom: biblioteca de roteamento para aplicativos React.
-Material-UI: biblioteca de componentes de interface de usuário para React.
+| Comando | Uso |
+| --- | --- |
+| `npm run dev` | `vite` |
+| `npm run build` | `vite build` |
+| `npm run lint` | `eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0` |
+| `npm run preview` | `vite preview` |
+
+Os scripts são os definidos em `package.json`; sua presença não indica que foram executados nesta revisão de documentação.
+
+## Estrutura
+
+- `README.md`
+- `Readme.md`
+- `index.html`
+- `package.json`
+- `public/`
+- `src/`
+- `vite.config.js`
+
+## Estado atual
+
+Fluxo demonstrativo no navegador, sem cobrança ou integração de pagamento. Os produtos são definidos no código.
+
+## Autoria
+
+[Weldon Carlos](https://github.com/WeldonCarlos) · [LinkedIn](https://www.linkedin.com/in/weldon-carlos-41b488231/)
